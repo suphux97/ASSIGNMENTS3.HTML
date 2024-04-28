@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student_Registration form</title>
+</head>
+<body>
+    <H1>HTML FORMS</H1>
+    <h2>Student Registration Form</h2>
+    <form action="Submit_registration" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="Date of birth">Date of birth:</label>
+        <input type="Date" id="dob" name="dob" required><br><br>
+        
+       <label for="Gender">Gender:</label><br>
+       <label for="male">Male:</label>
+       <input type="radio" id="male" name="gender" value="male"><br>
+       <label for="Female">Female:</label>
+       <input type="radio" id="Female" name="gender" value="Female">
+
+       <br><br>
+       <label for="address">Address:</label><br>
+       <textarea name="address" id="address" cols="30" rows="10" required></textarea><br><br>
+       <label for="telephone">Telephone:</label><br>
+       <input type="tel" name="telephone" id="telephone" required><br><br>
+       <label for="email">Email Adress:</label><br>
+       <input type="email" id="email" name="email" required><br><br>
+       <label for="Course">Cource:</label>
+       <select name="Cource" id="Cource" required>
+        <option value=""></option>
+        <option value="math"> Math:</option>
+        <option value="English">English:</option>
+        <option value="Chemistry"> Chemistry:</option>
+        <option value="metrology"> metrology:</option>
+        <option value="Medicine"> Medicine:</option>
+        <option value="Biochem"> Biochem:</option>
+     
+       </select>
+     <input type="button" value="Register">
+     <input type="button" value="cancel" onclick="window.location.href='index.html'">
+
+
+
+    </form>
+    
+</body>
+</html>
